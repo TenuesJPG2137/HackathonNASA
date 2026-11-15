@@ -9,13 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script src="recalc.js"></script>
-<script type="module">
-const lista = await (await fetch("files.json")).json();
-console.log(lista.length); // powinno pokazać 1563
- // przykład: wczytaj pierwszy plik
-const dane = await (await fetch("data/" + lista[0])).json();
-console.log(dane);
-</script>
 <style>
   html, body { height: 100%; margin: 0; }
   body { display: flex; flex-direction: column; background: #000; color: #eee; font-family: system-ui, sans-serif; }
